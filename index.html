@@ -64,13 +64,13 @@ body {
     // ここだけ編集すれば曲名と配信先を変更できます。
     // 配信URLが未定の場合は空文字 "" のままにしてください。
 const tracks = [
-  { name: "デイ・オフ(近日公開)", spotify: "", apple: "", youtube: "" },
-  { name: "Tandem", spotify: "https://open.spotify.com/intl-ja/track/2yenxPwDS2D0nasgAAJYpa?si=1c9e32b71c7445c1", apple: "https://music.apple.com/jp/song/tandem-feat-%E5%8F%AF%E4%B8%8D/6825211842", youtube: "https://youtu.be/ntnyFx-LNX8?si=AdCxhpAeGxUYu-_W" },
+  { name: "デイ・オフ(近日公開)", soundcloud:"https://on.soundcloud.com/wJjAv37XRweUFvKP8h", spotify: "", apple: "", youtube: "" },
+  { name: "Tandem", soundcloud:"https://on.soundcloud.com/3kM5KJ95h6017eihr8", spotify: "", apple: "https://music.apple.com/jp/song/tandem-feat-%E5%8F%AF%E4%B8%8D/6825211842", youtube: "https://youtu.be/ntnyFx-LNX8?si=AdCxhpAeGxUYu-_W" },
   { name: "ひとつひとつ", spotify: "https://open.spotify.com/intl-ja/track/2ywpykAruoRJY2wH3dW0MD?si=ef51b259f5a94eb4", apple: "https://music.apple.com/jp/song/%E3%81%B2%E3%81%A8%E3%81%A4%E3%81%B2%E3%81%A8%E3%81%A4-feat-%E5%8F%AF%E4%B8%8D/6825211844", youtube: "https://youtu.be/FcGJO5glL34?si=e7MYOtUECb_Irtid" },
   { name: "Tandem (Instrumental)", spotify: "https://open.spotify.com/intl-ja/track/0FHOFgRCsfFRiraJRmRrUz?si=3e252aee182d4731", apple: "https://music.apple.com/jp/song/tandem-instrumental/6825211847", youtube: "https://youtu.be/WLjQG_uqA5k?si=Y4qTKuYNxHkVJ_oh" },
   { name: "ひとつひとつ (Instrumental)", spotify: "https://open.spotify.com/intl-ja/track/5NsT1FehujaZARxp3L1czE?si=24aa9f1162044b4a", apple: "https://music.apple.com/jp/song/%E3%81%B2%E3%81%A8%E3%81%A4%E3%81%B2%E3%81%A8%E3%81%A4-instrumental/6825212126", youtube: "https://youtu.be/v0KFSUhYW6I?si=uENPEjBl52Sv2HRW" }
 ];
-    const services = [["spotify", "Spotify"], ["apple", "Apple Music"], ["youtube", "YouTube Music"]];
+    const services = [["soundcloud", "SoundCloud"],["spotify", "Spotify"], ["apple", "Apple Music"], ["youtube", "YouTube Music"]];
     const root = document.getElementById("tracks");
     tracks.forEach((track, index) => {
       const card = document.createElement("article");card.className = "track";
